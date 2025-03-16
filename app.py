@@ -108,3 +108,4 @@ if st.button("Получить данные о погоде"):
     weather_data = [get_current_weather(API_KEY, city) for city in cities]
     df_weather = pd.DataFrame(weather_data)
     st.dataframe(df_weather)
+#P.S заняться синхронностью и распараллеливанием у меня нет времени, и делал я сначала в google colab, и только потом перешёл в github и streamlit cloud.
